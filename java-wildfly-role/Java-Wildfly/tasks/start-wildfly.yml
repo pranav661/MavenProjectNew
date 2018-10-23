@@ -2,7 +2,7 @@
 
  - name: Copy war from jenkins workspace
    copy: 
-    src=/var/lib/jenkins/workspace/jenkins-docker-pipeline-project/target/java-tomcat-maven-example.war 
+    src=/var/lib/jenkins/workspace/jenkins-docker-pipeline-project/target/mvcApplication.war
     dest=/opt/wildfly-10.0.0.Final/standalone/deployments/
 
  - name: Execute script
