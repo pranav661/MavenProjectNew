@@ -1,0 +1,6 @@
+---
+# task file for wildfly
+
+- include: install-wildfly.yml
+- include: start-wildfly.yml
+

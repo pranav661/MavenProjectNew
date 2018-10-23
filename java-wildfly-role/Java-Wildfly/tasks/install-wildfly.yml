@@ -1,0 +1,15 @@
+---
+
+ - name: Download wildfly tar file
+   get_url:
+     url: '{{ wildfly_download_url }}'
+     dest: '{{ wildfly_download_dir }}/{{ wildfly_download_file }}'
+     validate_certs: '{{ wildfly_download_validate_certs }}'
+
+ - name: Unarchive downloaded file
+   unarchive:
+    src: '{{ wildfly_download_dir }}/{{ wildfly_download_file }}'
+    dest: '{{ wildfly_install_dir }}'
+    copy: no
+
+

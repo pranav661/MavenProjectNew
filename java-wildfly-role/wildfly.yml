@@ -1,0 +1,6 @@
+---
+- name: Parent File To Install Wildfly-10.0.0 & Deploy Application Using Ansible Roles
+  hosts: web-servers
+  become: true
+  roles:
+   - { role: Java-Wildfly }
