@@ -6,5 +6,5 @@
     dest=/opt/wildfly-10.0.0.Final/standalone/deployments/
 
  - name: Execute script
-   shell: /opt/wildfly-10.0.0.Final/bin/standalone.sh -b 0.0.0.0 >& /dev/null &
+   shell: /opt/wildfly-10.0.0.Final/bin/standalone.sh -b 0.0.0.0 &
 
